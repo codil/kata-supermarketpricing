@@ -1,6 +1,6 @@
 This is a solution for the supermarket pricing kata, based on Java 8.
 
-Each product has a pricing scheme (a kind of strategy pattern).
+Each product has a pricing scheme which set the model to follow when we want to generate the invoice.
 
 Concepts like immutable objects, non-anemic domain model, lambdas and streams processing are used.
 
