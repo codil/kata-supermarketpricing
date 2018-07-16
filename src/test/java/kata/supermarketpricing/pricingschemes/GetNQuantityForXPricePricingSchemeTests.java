@@ -22,7 +22,7 @@ public class GetNQuantityForXPricePricingSchemeTests {
                         new PriceForQuantity(pieces(1), money(1.00)),
                         new PriceForQuantity(pieces(3), money(2.00)));
 
-        Product product = new Product("Schewingum Baaable", pricingScheme);
+        Product product = new Product("Chewing Gum Baaable", pricingScheme);
 
         InvoiceItem invoiceItem = product.asInvoiceItem(pieces(20));
 
@@ -40,7 +40,7 @@ public class GetNQuantityForXPricePricingSchemeTests {
                         new PriceForQuantity(pieces(1), money(1.00)),
                         new PriceForQuantity(pieces(3), money(2.00)));
 
-        Product product = new Product("Schewingum Baaable", pricingScheme);
+        Product product = new Product("Chewing Gum Baaable", pricingScheme);
 
         InvoiceItem invoiceItem = product.asInvoiceItem(pieces(2));
 
@@ -59,7 +59,7 @@ public class GetNQuantityForXPricePricingSchemeTests {
                         new PriceForQuantity(kilos(1), money(2.00)),
                         new PriceForQuantity(kilos(3), money(5.00)));
 
-        Product product = new Product("Pommes", pricingScheme);
+        Product product = new Product("Apples", pricingScheme);
 
         InvoiceItem invoiceItem = product.asInvoiceItem(kilos(4.5));
 
@@ -77,7 +77,7 @@ public class GetNQuantityForXPricePricingSchemeTests {
                         new PriceForQuantity(kilos(1), money(2.00)),
                         new PriceForQuantity(kilos(3), money(5.00)));
 
-        Product product = new Product("Pommes", pricingScheme);
+        Product product = new Product("Apples", pricingScheme);
 
         InvoiceItem invoiceItem = product.asInvoiceItem(kilos(0.5));
 

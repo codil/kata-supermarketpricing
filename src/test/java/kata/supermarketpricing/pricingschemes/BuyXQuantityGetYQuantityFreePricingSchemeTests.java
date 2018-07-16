@@ -29,8 +29,8 @@ public class BuyXQuantityGetYQuantityFreePricingSchemeTests {
                 new PriceForQuantity(kilos(1), money(6.90)),
                 kilos(2),
                 kilos(0.5));
-        productPricedByPiece = new Product("Bonbon", piecesPricingScheme);
-        productPricedByWeigh = new Product("Bananes", weightPricingScheme);
+        productPricedByPiece = new Product("Candy", piecesPricingScheme);
+        productPricedByWeigh = new Product("Banana", weightPricingScheme);
     }
 
     @Test

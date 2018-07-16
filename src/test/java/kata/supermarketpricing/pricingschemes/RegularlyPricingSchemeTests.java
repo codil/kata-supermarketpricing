@@ -29,8 +29,8 @@ public class RegularlyPricingSchemeTests {
         PricingScheme weightPricingScheme = new RegularPricingScheme(
                 new PriceForQuantity(kilos(1), money(2.99)));
 
-        productPricedByPiece = new Product("Bonbon", piecesPricingScheme);
-        productPricedByWeight = new Product("Bananes", weightPricingScheme);
+        productPricedByPiece = new Product("Candy", piecesPricingScheme);
+        productPricedByWeight = new Product("Banana", weightPricingScheme);
     }
 
     @Test
