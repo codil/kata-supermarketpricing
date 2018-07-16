@@ -7,6 +7,7 @@ import kata.supermarketpricing.quantity.Quantity;
 /**
  * by Adil on 14/07/2018.
  */
+@FunctionalInterface
 public interface PricingScheme {
     InvoiceItem apply(String productName, Quantity broughtQuantity);
 }
