@@ -5,7 +5,7 @@ import java.util.Objects;
 /**
  * by Adil on 14/07/2018.
  */
-public class Gram implements Weight {
+class Gram implements Weight {
 
     private int value;
 

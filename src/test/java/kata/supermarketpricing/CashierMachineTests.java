@@ -3,8 +3,8 @@ package kata.supermarketpricing;
 import kata.supermarketpricing.pricingschemes.BuyXQuantityGetYQuantityFreePricingScheme;
 import kata.supermarketpricing.pricingschemes.GetNQuantityForXPricePricingScheme;
 import kata.supermarketpricing.pricingschemes.RegularPricingScheme;
-import kata.supermarketpricing.quantity.IntPiece;
-import kata.supermarketpricing.quantity.Kilogram;
+import kata.supermarketpricing.quantity.Piece;
+import kata.supermarketpricing.quantity.Weight;
 import org.joda.money.Money;
 import org.junit.Assert;
 import org.junit.Before;
@@ -80,14 +80,14 @@ public class CashierMachineTests {
 
         CashierMachine cashierMachine = new CashierMachine(productFinder);
 
-        IntPiece mayonnaiseQuantity1 = pieces(1);
-        IntPiece mayonnaiseQuantity2 = pieces(1);
-        IntPiece candyQuantity = pieces(2);
-        Kilogram bananaQuantity = kilos(3);
-        Kilogram beansQuantity = kilos(5);
-        IntPiece batteriesQuantity1 = pieces(4);
-        IntPiece batteriesQuantity2 = pieces(2);
-        IntPiece yogurtQuantity = pieces(4);
+        Piece mayonnaiseQuantity1 = pieces(1);
+        Piece mayonnaiseQuantity2 = pieces(1);
+        Piece candyQuantity = pieces(2);
+        Weight bananaQuantity = kilos(3);
+        Weight beansQuantity = kilos(5);
+        Piece batteriesQuantity1 = pieces(4);
+        Piece batteriesQuantity2 = pieces(2);
+        Piece yogurtQuantity = pieces(4);
 
         Invoice invoice =
                 cashierMachine.newCheckout()

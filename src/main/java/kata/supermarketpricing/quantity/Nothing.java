@@ -3,7 +3,7 @@ package kata.supermarketpricing.quantity;
 /**
  * by Adil on 15/07/2018.
  */
-public class Nothing implements Piece, Weight {
+class Nothing implements Piece, Weight {
 
     Nothing() { }
 

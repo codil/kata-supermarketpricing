@@ -3,7 +3,7 @@ package kata.supermarketpricing.format;
 import kata.supermarketpricing.Invoice;
 import kata.supermarketpricing.InvoiceItem;
 import kata.supermarketpricing.PriceForQuantity;
-import kata.supermarketpricing.quantity.IntPiece;
+import kata.supermarketpricing.quantity.Piece;
 import org.joda.money.Money;
 import org.junit.Assert;
 import org.junit.Test;
@@ -26,7 +26,7 @@ public class StringInvoiceFormatTests {
     public void shouldFormatAnInvoice() {
 
         String product = "Candy";
-        IntPiece quantity = pieces(5);
+        Piece quantity = pieces(5);
         InvoiceItem invoiceItem = new InvoiceItem(product);
         invoiceItem.addEntry(new PriceForQuantity(pieces(1), money(0.2)), quantity);
 

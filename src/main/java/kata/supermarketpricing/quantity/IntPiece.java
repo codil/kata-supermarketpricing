@@ -5,7 +5,7 @@ import java.util.Objects;
 /**
  * by Adil on 14/07/2018.
  */
-public class IntPiece implements Quantity, Piece {
+class IntPiece implements Quantity, Piece {
 
     private int value;
 

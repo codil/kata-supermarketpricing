@@ -5,7 +5,7 @@ import java.util.Objects;
 /**
  * by Adil on 14/07/2018.
  */
-public class Kilogram implements Weight {
+class Kilogram implements Weight {
 
     private double value;
 
