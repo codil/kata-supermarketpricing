@@ -7,8 +7,8 @@ import kata.supermarketpricing.quantity.Quantity;
 import static kata.supermarketpricing.Currency.*;
 
 /**
- * A mapping of the scheme "when you buy x quantity and receive y quantity for free"
- * Example : "when you buy 4 batteries, the fifth is free"
+ * A mapping of the scheme "If you buy x quantity you receive y quantity for free"
+ * Example : "if you buy 4 batteries, the fifth is free"
  *
  * by Adil on 15/07/2018.
  */
@@ -53,11 +53,9 @@ public class BuyXQuantityGetYQuantityFreePricingScheme implements PricingScheme 
             return invoiceItem;
         }
 
-        Quantity pricedQuantity = packageQuantity.times(intoPackage - outOfPackage);
+        Quantity pricedQuantity = eligibleQuantity.times(intoPackage).plus(basePriceForQuantity.quantityTimes(outOfPackage));
         Quantity freeQuantity = broughtQuantity.minus(pricedQuantity);
 
-        //invoiceItem.addEntry(basePriceForQuantity, inPackage + outPackage);
-        //invoiceItem.addEntry(basePriceForQuantity.update(regularlyPricedQuantity.plus(freeQuantity).times(inPackage)), 1);
         invoiceItem.addEntry(basePriceForQuantity, pricedQuantity, intoPackage);
         invoiceItem.addEntry(basePriceForQuantity.update(zero()), freeQuantity, outOfPackage);
 
